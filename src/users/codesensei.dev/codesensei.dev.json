@@ -1,0 +1,58 @@
+{
+    "id" : "codesensei.dev",
+    "title" : "Code Sensei",
+    "description" : "Best resources for your coding journey",
+    "groups" : [
+      {
+        "id": 1,
+        "mainText": "Java Youtube Resources",
+        "thumbnail": "./img-01.jpg",
+        "links": [
+          {
+            "id": 1,
+            "text": "Java tutorials for beginners",
+            "url": "https://gist.github.com/codesensei-dev",
+            "thumbnail": "./img-01.jpg"
+          },
+          {
+            "id": 2,
+            "text": "Java tutorials for beginners-02",
+            "url": "https://gist.github.com/codesensei-dev",
+            "thumbnail": "./img-01.jpg"
+          },
+          {
+            "id": 3,
+            "text": "Java tutorials for beginners-03",
+            "url": "https://gist.github.com/codesensei-dev",
+            "thumbnail": "./img-01.jpg"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "mainText": "Java Youtube Resources-02",
+        "thumbnail": "./img-01.jpg",
+        "links": [
+          {
+            "id": 1,
+            "text": "Java tutorials for beginners",
+            "url": "https://gist.github.com/codesensei-dev",
+            "thumbnail": "./img-01.jpg"
+          },
+          {
+            "id": 2,
+            "text": "Java tutorials for beginners-02",
+            "url": "https://gist.github.com/codesensei-dev",
+            "thumbnail": "./img-01.jpg"
+          },
+          {
+            "id": 3,
+            "text": "Java tutorials for beginners-03",
+            "url": "https://gist.github.com/codesensei-dev",
+            "thumbnail": "./img-01.jpg"
+          }
+        ]
+      }
+    ]
+}
+

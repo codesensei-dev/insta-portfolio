@@ -1,0 +1,19 @@
+import { useContext } from 'react';
+import Image from 'react-bootstrap/Image';
+import { userContext } from '../App';
+
+export default function ProfileSection(){
+  const userObj = useContext(userContext);
+    let imageUrl = 'data:image/png;base64,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';
+    return (
+      <div style={{ textAlign: 'center', margin : '10px' }}>
+        <Image
+          src={imageUrl}
+          roundedCircle
+          style={{ width: '7%', margin: '10px 0px' }}
+        />
+        <h4 style={{ margin: '10px 0px 3px' }}>{userObj.title}</h4>
+        <h6 style={{ margin: '3px 0px 10px' }}>{userObj.description}</h6>
+      </div>
+    );
+}
