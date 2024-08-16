@@ -9,7 +9,7 @@ export default function ContentSection(){
         {userObj.groups.map((item,index)=>{
             return (
               <>
-                <h6 style={{ margin: '10px' }} key={index}>{item.mainText}</h6>
+                <h6 className="poppins-medium" style={{ margin: '40px 0px 20px 0px' }} key={index}>{item.mainText}</h6>
                 {
                     item.links.map((item,index)=>{
                         return <CardComponent link={item} key={index}/>;

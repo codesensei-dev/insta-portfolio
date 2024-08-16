@@ -19,8 +19,8 @@ export default function CardComponent(props){
               <Col lg={2}>
                 <Image src={testUrl} rounded width={'100%'} height={'100%'}/>
               </Col>
-              <Col lg={8} style={{'padding' : '5px auto'}}>
-                <p style={{'margin' : '5px auto', 'padding' : '0px'}}> {props.link.text} </p>
+              <Col lg={8}>
+                <p className='poppins-regular' style={{'margin' : '20px auto'}}> {props.link.text} </p>
               </Col>
               {/* <Col lg={2}>
                 <Button width={'0px'}>
