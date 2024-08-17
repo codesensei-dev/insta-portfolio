@@ -3,7 +3,7 @@ import Group from "./Group";
 export default class User{
     constructor(jsonObject){
         this.id = jsonObject.id;
-        this.title = jsonObject.title;
+        this.name = jsonObject.name;
         this.description = jsonObject.description;
         this.groups = []
         

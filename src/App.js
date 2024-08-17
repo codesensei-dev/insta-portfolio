@@ -1,10 +1,9 @@
-import logo from './logo.svg';
+import { createContext, useState } from 'react';
 import './App.css';
-import ProfileSection from './components/ProfileSection'
-import ContentSection from './components/ContenSection';
-import { useEffect, createContext, useContext, useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
 import User from './models/User';
 import jsondata from './users/codesensei.dev/codesensei.dev.json'
+import Home from './pages/Home';
 export const userContext = createContext();
 
 export default function App() {
@@ -13,12 +12,20 @@ export default function App() {
 
 
   return (
-    <div className="background">
-      <userContext.Provider value={userObj}>
-        <ProfileSection />
-        <ContentSection />
-      </userContext.Provider>
-    </div>
+    
+      <Routes>
+        <Route
+          path="/home/:groupid"
+          element={
+            <div className="background">
+              <userContext.Provider value={userObj}>
+                <Home />
+              </userContext.Provider>
+            </div>
+          }
+        />
+      </Routes>
+    
   );
 }
 
