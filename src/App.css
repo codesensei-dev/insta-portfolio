@@ -1,5 +1,5 @@
 .background{
-  background-color: rgb(0, 129, 234);
+  background-image: linear-gradient(to bottom, #abffff, #8ceafd, #78d4f9, #73bcf1, #7ba2e3);
   width: 100%;
   padding: 20px 0px;
   height: 100vh;
@@ -16,6 +16,23 @@
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
+}
+
+.card {
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: black;
+}
+
+.card:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.card:active {
+  transform: scale(0.95);
 }
 
 .poppins-bold {

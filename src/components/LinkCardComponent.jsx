@@ -7,11 +7,13 @@ import Button from 'react-bootstrap/Button';
 
 export default function LinkCardComponent({link}){
     let testUrl =
-      'https://t3.ftcdn.net/jpg/02/99/04/20/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg';
+      'https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg';
     let testButton =
       'https://i.pinimg.com/736x/7b/07/79/7b077939dcda060902df44d3700b6d56.jpg';
     return (
-      <div style={{ textAlign: 'center', margin: '20px auto', maxWidth:'600px' }}>
+      <div
+        style={{ textAlign: 'center', margin: '20px auto', maxWidth: '600px' }}
+      >
         <a href={link.url} target="_blank" style={{ textDecoration: 'none' }}>
           <Card>
             <Container style={{ padding: '0 10px' }}>
@@ -21,23 +23,29 @@ export default function LinkCardComponent({link}){
                   xs={2}
                   style={{
                     padding: '5px',
-                    margin :'5px',
+                    margin: '5px',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
                   }}
                 >
                   <Image
+                    fluid
                     src={testUrl}
                     rounded
-                    style={{ aspectRatio: '1/1', width: '100%' }}
+                    style={{
+                      aspectRatio: '1/1',
+                      width: '100%',
+                      objectFit: 'cover',
+                      objectPosition: 'center',
+                    }}
                   />
                 </Col>
                 <Col
                   lg={8}
                   xs={8}
                   style={{
-                    margin : '5px',
+                    margin: '5px',
                     padding: '0',
                     display: 'flex',
                     alignItems: 'center',
