@@ -2,6 +2,7 @@
     "id" : "codesensei.dev",
     "name" : "Code Sensei",
     "description" : "Best resources for your coding journey",
+    "image" : "user-image.jpg",
     "groups" : [
       {
         "id": 1,

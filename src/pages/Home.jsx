@@ -2,24 +2,36 @@ import ProfileSection from "../components/ProfileSection";
 import ContentSection from "../components/ContenSection";
 import GroupCardComponent from "../components/GroupCardComponent";
 import LinkCardComponent from "../components/LinkCardComponent";
-import { useContext } from "react";
-import { userContext } from "../App";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { useNavigate, useParams } from "react-router-dom";
-
+import { useState, useEffect } from "react";
+import User from "../models/User";
 
 export default function Home(){
-    const userObj = useContext(userContext);
     const {groupid} = useParams();
     const navigate = useNavigate();
+    const [userObj, setUserObj] = useState();
 
     function GroupCardOnClick(id) {
     navigate(`/links/${id}`);
     console.log('test');
     }
 
+    
+
+    useEffect(() => {
+      async function loadData() {
+        await fetch(`${process.env.PUBLIC_URL}/users/codesensei.dev.json`)
+          .then((response) => response.json())
+          .then((jsonData) => setUserObj(new User(jsonData)))
+          .catch((error) => console.error('Error loading JSON:', error));
+      }
+      loadData();
+    }, []);
+
     return (
+      userObj ?
       <>
         <ProfileSection user={userObj} />
         <ContentSection
@@ -40,7 +52,7 @@ export default function Home(){
             return <h1>404 NOT FOUND</h1>
           }}
         />
-      </>
+      </> : <></>
     );
 }
 
