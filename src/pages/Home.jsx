@@ -15,7 +15,7 @@ export default function Home(){
     const navigate = useNavigate();
 
     function GroupCardOnClick(id) {
-    navigate(`/home/${id}`);
+    navigate(`/links/${id}`);
     console.log('test');
     }
 
@@ -24,7 +24,7 @@ export default function Home(){
         <ProfileSection user={userObj} />
         <ContentSection
           DisplayComponent={() => {
-            if (groupid === 'groups') {
+            if (typeof groupid === 'undefined') {
               return GetGroupCards(userObj.groups, GroupCardOnClick);
             } else {
               for (var i = 0; i < userObj.groups.length; i++) {
