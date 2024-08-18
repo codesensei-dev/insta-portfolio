@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/insta-portfolio/static/css/main.2d323e84.css",
-    "main.js": "/insta-portfolio/static/js/main.6fa91da6.js",
+    "main.js": "/insta-portfolio/static/js/main.e3b8dac3.js",
     "index.html": "/insta-portfolio/index.html",
     "main.2d323e84.css.map": "/insta-portfolio/static/css/main.2d323e84.css.map",
-    "main.6fa91da6.js.map": "/insta-portfolio/static/js/main.6fa91da6.js.map"
+    "main.e3b8dac3.js.map": "/insta-portfolio/static/js/main.e3b8dac3.js.map"
   },
   "entrypoints": [
     "static/css/main.2d323e84.css",
-    "static/js/main.6fa91da6.js"
+    "static/js/main.e3b8dac3.js"
   ]
 }
