@@ -40,3 +40,12 @@
   font-weight: 700;
   font-style: normal;
 }
+
+.social-icon:hover {
+  /* border: 1px solid black; */
+  transform: scale(1.05);
+}
+
+.social-icon:active {
+  transform: scale(0.95);
+}

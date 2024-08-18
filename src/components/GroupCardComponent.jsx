@@ -8,8 +8,12 @@ export default function GroupCardComponent({group, onClick}){
 
     return (
       <Card style={{ width: '100%', margin: 'auto' }} onClick={onClick}>
-        <Card.Img variant="top" src={imageUrl} />
-        <Card.Body style={{padding : 0}}>
+        <Card.Img
+          variant="top"
+          src={imageUrl}
+          style={{ objectFit: 'cover', objectPosition: 'center' }}
+        />
+        <Card.Body style={{ padding: 0 }}>
           <p style={{ margin: '5%' }}>{group.mainText}</p>
         </Card.Body>
       </Card>

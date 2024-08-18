@@ -1,14 +1,19 @@
 import Group from "./Group";
+import SocialLink from "./SocialLink";
 
 export default class User{
     constructor(jsonObject){
         this.id = jsonObject.id;
         this.name = jsonObject.name;
         this.description = jsonObject.description;
-        this.groups = []
         this.image = `${process.env.PUBLIC_URL}/users/assets/main/${jsonObject.image}`;
-        jsonObject.groups.map((element) => {
-          this.groups.push(new Group(element));
+
+        this.socialLinks = jsonObject.socialLinks.map((socialLink)=>{
+          return new SocialLink(socialLink);
+        });
+
+        this.groups = jsonObject.groups.map((group) => {
+          return new Group(group);
         });
     }
 }

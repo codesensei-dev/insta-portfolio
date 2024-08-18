@@ -7,6 +7,8 @@ import Col from 'react-bootstrap/Col';
 import { useNavigate, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import User from "../models/User";
+import FooterSection from "../components/FooterSection";
+import Loading from "./Loading";
 
 export default function Home(){
     const {groupid} = useParams();
@@ -15,7 +17,6 @@ export default function Home(){
 
     function GroupCardOnClick(id) {
     navigate(`/links/${id}`);
-    console.log('test');
     }
 
     
@@ -30,8 +31,7 @@ export default function Home(){
       loadData();
     }, []);
 
-    return (
-      userObj ?
+    return userObj ? (
       <>
         <ProfileSection user={userObj} />
         <ContentSection
@@ -49,11 +49,12 @@ export default function Home(){
               }
             }
 
-            return <h1>404 NOT FOUND</h1>
+            navigate('/notfound');
           }}
         />
-      </> : <></>
-    );
+        <FooterSection user={userObj} />
+      </>
+    ) : (<Loading/>);
 }
 
 function GetGroupCards(groups, navigator){

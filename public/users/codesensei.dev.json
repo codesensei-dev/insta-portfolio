@@ -3,6 +3,16 @@
     "name" : "Code Sensei",
     "description" : "Best resources for your coding journey",
     "image" : "user-image.jpg",
+    "socialLinks" : [
+      {
+        "icon" : "instagram.png",
+        "url" : "https://instagram.com/codesensei.dev"
+      },
+      {
+        "icon" : "github.png",
+        "url" : "https://github.com/codesensei-dev"
+      }
+    ],
     "groups" : [
       {
         "id": 1,
