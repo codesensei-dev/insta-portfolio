@@ -19,11 +19,12 @@
 }
 
 .card {
-  border-radius: 1rem;
-  border: 0.5vmin solid #05060f;
-  box-shadow: 0.4rem 0.4rem #05060f;
-  overflow: hidden;
-  color: black;
+
+  border-radius: 0.75rem !important;
+  border: 0.5vmin solid #454545 !important;
+  box-shadow: 0.2rem 0.2rem #454545;
+  overflow: hidden !important;
+  background-color: rgb(233, 200, 116) !important;
 }
 
 .card:hover {
