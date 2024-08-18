@@ -4,10 +4,10 @@ export default class Group{
         this.id = jsonObject.id;
         this.mainText = jsonObject.mainText;
         this.links = []
-        this.image = jsonObject.thumbnail
+        this.image = `${process.env.PUBLIC_URL}/users/assets/${this.id}/${jsonObject.thumbnail}`
 
         jsonObject.links.map(element => {
-            this.links.push( new Link(element))
+            this.links.push( new Link(this.id, element))
         });
     }
 }

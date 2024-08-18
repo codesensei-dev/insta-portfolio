@@ -15,102 +15,128 @@
     ],
     "groups" : [
       {
-        "id": 1,
+        "id": "dsa-01",
+        "mainText": "AlgoMap - Best DSA Resource",
+        "thumbnail": "dsa-img.jpg",
+        "links": [
+          {
+            "text": "AlgoMap.io Link",
+            "url": "https://algomap.io/",
+            "thumbnail": "dsa-img.jpg"
+          }
+        ]
+      },
+      {
+        "id": "git-01",
+        "mainText": "Code for all problems",
+        "thumbnail": "git-img.jpeg",
+        "links": [
+          {
+            "text": "Java And Python Code Snippets",
+            "url": "https://gist.github.com/codesensei-dev",
+            "thumbnail": "git-img.jpeg"
+          }
+        ]
+      },
+      {
+        "id": "java-01",
         "mainText": "Java Youtube Resources",
-        "thumbnail": "./img-01.jpg",
+        "thumbnail": "java-img.jpg",
         "links": [
           {
-            "id": 1,
-            "text": "Java tutorials for beginners",
-            "url": "https://gist.github.com/codesensei-dev",
-            "thumbnail": "./img-01.jpg"
+            "text": "Java Tutorials for beginners",
+            "url": "https://www.youtube.com/playlist?list=PLsyeobzWxl7pe_IiTfNyr55kwJPWbgxB5&si=DMrQD6Y0NFYtoE9P",
+            "thumbnail": "java-img.jpg"
           },
           {
-            "id": 2,
-            "text": "Java tutorials for beginners-02",
-            "url": "https://gist.github.com/codesensei-dev",
-            "thumbnail": "./img-01.jpg"
+            "text": "Java Tutorials - AmigoCodes",
+            "url": "https://www.youtube.com/watch?v=j9VNCI9Xo80",
+            "thumbnail": "java-img.jpg"
           },
           {
-            "id": 3,
-            "text": "Java tutorials for beginners-03",
-            "url": "https://gist.github.com/codesensei-dev",
-            "thumbnail": "./img-01.jpg"
+            "text": "Java Design Patterns",
+            "url": "https://www.youtube.com/watch?v=vap9ACtc_tU",
+            "thumbnail": "java-img.jpg"
           }
         ]
       },
       {
-        "id": 2,
-        "mainText": "Java Youtube Resources-02",
-        "thumbnail": "./img-01.jpg",
+        "id": "java-books-01",
+        "mainText": "Java Books Resources",
+        "thumbnail": "head-first.png",
         "links": [
           {
-            "id": 1,
-            "text": "Java tutorials for beginners",
-            "url": "https://gist.github.com/codesensei-dev",
-            "thumbnail": "./img-01.jpg"
+            "text": "Head First Java Book",
+            "url": "https://github.com/zhiyzuo/learnjava/blob/master/Head%20First%20Java%2C%202nd%20Edition.pdf",
+            "thumbnail": "head-first.png"
           },
           {
-            "id": 2,
-            "text": "Java tutorials for beginners-02",
-            "url": "https://gist.github.com/codesensei-dev",
-            "thumbnail": "./img-01.jpg"
+            "text": "Effective Java Book",
+            "url": "https://github.com/JoseRFJuniorLLMs/book-2/blob/master/java/Effective.Java.3rd.Edition.2018.1.pdf",
+            "thumbnail": "effective-java.png"
           },
           {
-            "id": 3,
-            "text": "Java tutorials for beginners-03",
-            "url": "https://gist.github.com/codesensei-dev",
-            "thumbnail": "./img-01.jpg"
+            "text": "Head First Design Patterns",
+            "url": "https://github.com/ksatria/MK-Design-Pattern/blob/master/Ebook/Head%20First%20Design%20Patterns.pdf",
+            "thumbnail": "design-patterns.png"
           }
         ]
       },
       {
-        "id": 1,
-        "mainText": "Java Youtube Resources",
-        "thumbnail": "./img-01.jpg",
+        "id": "tech-salaries",
+        "mainText": "IndiaTechSalaries",
+        "thumbnail": "img.png",
         "links": [
           {
-            "id": 1,
-            "text": "Java tutorials for beginners",
-            "url": "https://gist.github.com/codesensei-dev",
-            "thumbnail": "./img-01.jpg"
-          },
-          {
-            "id": 2,
-            "text": "Java tutorials for beginners-02",
-            "url": "https://gist.github.com/codesensei-dev",
-            "thumbnail": "./img-01.jpg"
-          },
-          {
-            "id": 3,
-            "text": "Java tutorials for beginners-03",
-            "url": "https://gist.github.com/codesensei-dev",
-            "thumbnail": "./img-01.jpg"
+            "text": "IndiaTechSalaries",
+            "url": "https://indiatechsalaries.com/",
+            "thumbnail": "img.png"
           }
         ]
       },
       {
-        "id": 2,
-        "mainText": "Java Youtube Resources-02",
-        "thumbnail": "./img-01.jpg",
+        "id": "java-02",
+        "mainText": "Java For Beginners",
+        "thumbnail": "java.jpg",
         "links": [
           {
-            "id": 1,
-            "text": "Java tutorials for beginners",
-            "url": "https://gist.github.com/codesensei-dev",
-            "thumbnail": "./img-01.jpg"
+            "text": "Java Developer Roadmap",
+            "url": "https://roadmap.sh/java",
+            "thumbnail": "head-first.png"
           },
           {
-            "id": 2,
-            "text": "Java tutorials for beginners-02",
-            "url": "https://gist.github.com/codesensei-dev",
-            "thumbnail": "./img-01.jpg"
+            "text": "Head First Java Book",
+            "url": "https://github.com/zhiyzuo/learnjava/blob/master/Head%20First%20Java%2C%202nd%20Edition.pdf",
+            "thumbnail": "head-first.png"
           },
           {
-            "id": 3,
-            "text": "Java tutorials for beginners-03",
-            "url": "https://gist.github.com/codesensei-dev",
-            "thumbnail": "./img-01.jpg"
+            "text": "Java Tutorials - AmigoCodes",
+            "url": "https://www.youtube.com/watch?v=j9VNCI9Xo80",
+            "thumbnail": "java-img.jpg"
+          }
+        ]
+      },
+      {
+        "id": "java-question-bank",
+        "mainText": "Java Interview Questions",
+        "thumbnail": "java.jpg",
+        "links": [
+          {
+            "text": "Java Question Bank",
+            "url": "https://www.interviewbit.com/java-interview-questions/",
+            "thumbnail": "java.jpg"
+          }
+        ]
+      },
+      {
+        "id": "sd-resource",
+        "mainText": "System Design Resource",
+        "thumbnail": "sd.png",
+        "links": [
+          {
+            "text": "System Design Resource",
+            "url": "https://www.karanpratapsingh.com/courses/system-design",
+            "thumbnail": "sd.png"
           }
         ]
       }

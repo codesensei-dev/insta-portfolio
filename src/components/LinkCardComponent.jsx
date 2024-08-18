@@ -5,10 +5,6 @@ import Image from 'react-bootstrap/esm/Image';
 import Container from 'react-bootstrap/Container';
 
 export default function LinkCardComponent({link}){
-    let testUrl =
-      'https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg';
-    let testButton =
-      'https://i.pinimg.com/736x/7b/07/79/7b077939dcda060902df44d3700b6d56.jpg';
     return (
       <div
         style={{ textAlign: 'center', margin: '20px auto', maxWidth: '600px' }}
@@ -30,7 +26,7 @@ export default function LinkCardComponent({link}){
                 >
                   <Image
                     fluid
-                    src={testUrl}
+                    src={link.thumbnail}
                     rounded
                     style={{
                       aspectRatio: '1/1',
