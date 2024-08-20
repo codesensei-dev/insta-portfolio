@@ -1,4 +1,5 @@
 import Image from 'react-bootstrap/Image';
+import '../css/ProfileSection.css';
 
 export default function ProfileSection({user}){
     return (
@@ -6,11 +7,13 @@ export default function ProfileSection({user}){
         <Image
           src={user.image}
           roundedCircle
+          width="150"
+          height="150"
           style={{ width: '7%', minWidth:'150px', margin: '5px 0px' }}
         />
-        <h4 className="poppins-bold" style={{ margin: '5px 0px 5px'}}>{user.name}</h4>
-        <h5 className="poppins-medium" style={{ margin: '0px 0px 35px' }}>{user.userId}</h5>
-        <h6 className="poppins-bold" style={{ margin: '3px 0px 10px' }}>{user.description}</h6>
+      <h4 className="profile-name">{user.name}</h4>
+      <h5 className="profile-userId">{user.userId}</h5>
+      <h6 className="profile-description">{user.description}</h6>
       </div>
     );
 }

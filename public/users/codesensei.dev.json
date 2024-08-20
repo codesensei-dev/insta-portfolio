@@ -3,14 +3,14 @@
     "name" : "Gowtham Paruchuru",
     "userId": "@codesensei.dev",
     "description" : "Best resources for your coding journey",
-    "image" : "user-image.jpg",
+    "image" : "user-image.webp",
     "socialLinks" : [
       {
-        "icon" : "instagram.png",
+        "icon" : "instagram.webp",
         "url" : "https://instagram.com/codesensei.dev"
       },
       {
-        "icon" : "github.png",
+        "icon" : "github.webp",
         "url" : "https://github.com/codesensei-dev"
       }
     ],
@@ -18,126 +18,126 @@
       {
         "id": "dsa-01",
         "mainText": "AlgoMap - Best DSA Resource",
-        "thumbnail": "dsa-img.jpg",
+        "thumbnail": "dsa-img.webp",
         "links": [
           {
             "text": "AlgoMap.io Link",
             "url": "https://algomap.io/",
-            "thumbnail": "dsa-img.jpg"
+            "thumbnail": "dsa-img.webp"
           }
         ]
       },
       {
         "id": "git-01",
         "mainText": "Code for all problems",
-        "thumbnail": "git-img.jpeg",
+        "thumbnail": "git-img.webp",
         "links": [
           {
             "text": "Java And Python Code Snippets",
             "url": "https://gist.github.com/codesensei-dev",
-            "thumbnail": "git-img.jpeg"
+            "thumbnail": "git-img.webp"
           }
         ]
       },
       {
         "id": "java-01",
         "mainText": "Java Youtube Resources",
-        "thumbnail": "java-img.jpg",
+        "thumbnail": "java-img.webp",
         "links": [
           {
             "text": "Java Tutorials for beginners",
             "url": "https://www.youtube.com/playlist?list=PLsyeobzWxl7pe_IiTfNyr55kwJPWbgxB5&si=DMrQD6Y0NFYtoE9P",
-            "thumbnail": "java-img.jpg"
+            "thumbnail": "java-img.webp"
           },
           {
             "text": "Java Tutorials - AmigoCodes",
             "url": "https://www.youtube.com/watch?v=j9VNCI9Xo80",
-            "thumbnail": "java-img.jpg"
+            "thumbnail": "java-img.webp"
           },
           {
             "text": "Java Design Patterns",
             "url": "https://www.youtube.com/watch?v=vap9ACtc_tU",
-            "thumbnail": "java-img.jpg"
+            "thumbnail": "java-img.webp"
           }
         ]
       },
       {
         "id": "java-books-01",
         "mainText": "Java Books Resources",
-        "thumbnail": "head-first.png",
+        "thumbnail": "head-first.webp",
         "links": [
           {
             "text": "Head First Java Book",
             "url": "https://github.com/zhiyzuo/learnjava/blob/master/Head%20First%20Java%2C%202nd%20Edition.pdf",
-            "thumbnail": "head-first.png"
+            "thumbnail": "head-first.webp"
           },
           {
             "text": "Effective Java Book",
             "url": "https://github.com/JoseRFJuniorLLMs/book-2/blob/master/java/Effective.Java.3rd.Edition.2018.1.pdf",
-            "thumbnail": "effective-java.png"
+            "thumbnail": "effective-java.webp"
           },
           {
             "text": "Head First Design Patterns",
             "url": "https://github.com/ksatria/MK-Design-Pattern/blob/master/Ebook/Head%20First%20Design%20Patterns.pdf",
-            "thumbnail": "design-patterns.png"
+            "thumbnail": "design-patterns.webp"
           }
         ]
       },
       {
         "id": "tech-salaries",
         "mainText": "IndiaTechSalaries",
-        "thumbnail": "img.png",
+        "thumbnail": "img.webp",
         "links": [
           {
             "text": "IndiaTechSalaries",
             "url": "https://indiatechsalaries.com/",
-            "thumbnail": "img.png"
+            "thumbnail": "img.webp"
           }
         ]
       },
       {
         "id": "java-02",
         "mainText": "Java For Beginners",
-        "thumbnail": "java.jpg",
+        "thumbnail": "java.webp",
         "links": [
           {
             "text": "Java Developer Roadmap",
             "url": "https://roadmap.sh/java",
-            "thumbnail": "head-first.png"
+            "thumbnail": "head-first.webp"
           },
           {
             "text": "Head First Java Book",
             "url": "https://github.com/zhiyzuo/learnjava/blob/master/Head%20First%20Java%2C%202nd%20Edition.pdf",
-            "thumbnail": "head-first.png"
+            "thumbnail": "head-first.webp"
           },
           {
             "text": "Java Tutorials - AmigoCodes",
             "url": "https://www.youtube.com/watch?v=j9VNCI9Xo80",
-            "thumbnail": "java-img.jpg"
+            "thumbnail": "java-img.webp"
           }
         ]
       },
       {
         "id": "java-question-bank",
         "mainText": "Java Interview Questions",
-        "thumbnail": "java.jpg",
+        "thumbnail": "java.webp",
         "links": [
           {
             "text": "Java Question Bank",
             "url": "https://www.interviewbit.com/java-interview-questions/",
-            "thumbnail": "java.jpg"
+            "thumbnail": "java.webp"
           }
         ]
       },
       {
         "id": "sd-resource",
         "mainText": "System Design Resource",
-        "thumbnail": "sd.png",
+        "thumbnail": "sd.webp",
         "links": [
           {
             "text": "System Design Resource",
             "url": "https://www.karanpratapsingh.com/courses/system-design",
-            "thumbnail": "sd.png"
+            "thumbnail": "sd.webp"
           }
         ]
       }

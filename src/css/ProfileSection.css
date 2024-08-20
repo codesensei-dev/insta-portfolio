@@ -1,0 +1,28 @@
+.profile-section {
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .profile-image {
+    width: 7%;
+    min-width: 150px;
+    margin: 5px 0px;
+  }
+  
+  .profile-name {
+    margin: 5px 0px 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+  }
+  
+  .profile-userId {
+    margin: 0px 0px 35px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: medium;
+  }
+  
+  .profile-description {
+    margin: 3px 0px 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+  }
