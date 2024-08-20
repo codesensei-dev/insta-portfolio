@@ -5,6 +5,7 @@ export default class User{
     constructor(jsonObject){
         this.id = jsonObject.id;
         this.name = jsonObject.name;
+        this.userId = jsonObject.userId;
         this.description = jsonObject.description;
         this.image = `${process.env.PUBLIC_URL}/users/assets/main/${jsonObject.image}`;
 

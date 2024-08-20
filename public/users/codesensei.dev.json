@@ -1,6 +1,7 @@
 {
     "id" : "codesensei.dev",
-    "name" : "Code Sensei",
+    "name" : "Gowtham Paruchuru",
+    "userId": "@codesensei.dev",
     "description" : "Best resources for your coding journey",
     "image" : "user-image.jpg",
     "socialLinks" : [
