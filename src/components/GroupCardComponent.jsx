@@ -8,6 +8,7 @@ export default function GroupCardComponent({ group, onClick }) {
       <Card.Img
         variant="top"
         src={group.image}
+        alt="Group Image"
         style={{ objectFit: 'cover', objectPosition: 'center', height: '70%', width: '100%' }}
       />
       <Card.Body style={{ padding: 0, height: '30%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
