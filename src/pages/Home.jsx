@@ -63,7 +63,7 @@ export default function Home() {
                 "name": "Who is Code-Sensei?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Code-Sensei, also known as Gowtham Paruchur, is a Senior Software Engineer with over 4 years of experience. He has conducted interviews with more than 100 candidates and specializes in Java, Python, and Data Structures and Algorithms."
+                  "text": "Code-Sensei, aka Gowtham Paruchuru, is a Senior Software Engineer with over 4 years of experience. He has conducted interviews with more than 100 candidates and specializes in Java, Python, and Data Structures and Algorithms."
                 }
               },
               {
@@ -79,7 +79,7 @@ export default function Home() {
                 "name": "Where can I follow Code-Sensei?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Follow Code-Sensei on Instagram at @codesensei.dev, where he has a growing community of over 30,000 followers."
+                  "text": "Follow Code-Sensei on Instagram at @codesensei.dev, where he has a growing community of over 30,000+ followers."
                 }
               }
             ]
