@@ -28,6 +28,7 @@ export default function LinkCardComponent({link}){
                     fluid
                     src={link.thumbnail}
                     rounded
+                    alt={link.text}
                     style={{
                       aspectRatio: '1/1',
                       width: '100%',
