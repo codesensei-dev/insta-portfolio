@@ -17,8 +17,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "add-domain": "echo \"www.codesensei.in\" > build/CNAME",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "npm run add-domain && gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
