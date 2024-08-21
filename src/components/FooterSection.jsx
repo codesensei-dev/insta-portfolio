@@ -8,10 +8,10 @@ export default function FooterSection({user}){
     return (
       <div style={{ textAlign: 'center', margin: '10px' }}>
         <h5 className="poppins-medium" style={{ margin: '30px 0px' }}>
-          Many more resources coming soon...
+          Sare kaani kaani kaani...
         </h5>
         <h6 className="poppins-regular" style={{ margin: '30px 0px' }}>
-          Sare kaani kaani kaaniiii....
+          Follow me on
         </h6>
             {user.socialLinks.map((socaillink,index)=>{
                 return (
