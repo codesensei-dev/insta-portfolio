@@ -7,10 +7,10 @@ export default function FooterSection({user}){
 
     return (
       <div style={{ textAlign: 'center', margin: '10px' }}>
-        <h5 className="poppins-medium" style={{ margin: '30px 0px' }}>
+        <h5 className="poppins-medium" style={{ margin: '15px 0px' }}>
           Sare kaani kaani kaani...
         </h5>
-        <h6 className="poppins-regular" style={{ margin: '30px 0px' }}>
+        <h6 className="poppins-regular" style={{ margin: '15px 0px' }}>
           Follow me on
         </h6>
             {user.socialLinks.map((socaillink,index)=>{
@@ -24,6 +24,7 @@ export default function FooterSection({user}){
                     </a>
                 );
             })}
+          <p className="poppins-regular" style={{ margin: '30px 0px 5px' }}>Copyright © 2024 Gowtham Paruchuru</p>
       </div>
     );
 }
