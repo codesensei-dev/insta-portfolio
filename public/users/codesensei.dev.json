@@ -12,6 +12,18 @@
     ],
     "groups" : [
       {
+        "id": "java-articles",
+        "mainText": "Java Concepts Articles",
+        "thumbnail": "java.webp",
+        "links": [
+          {
+            "text": "Stack Memory Vs Heap Memory",
+            "url": "https://www.digitalocean.com/community/tutorials/java-heap-space-vs-stack-memory",
+            "thumbnail": "stack-heap.webp"
+          }
+        ]
+      },
+      {
         "id": "dsa-01",
         "mainText": "AlgoMap - Best DSA Resource",
         "thumbnail": "dsa-img.webp",
