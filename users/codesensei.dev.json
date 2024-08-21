@@ -8,6 +8,10 @@
       {
         "icon" : "instagram.webp",
         "url" : "https://instagram.com/codesensei.dev"
+      },
+      {
+        "icon" : "linkedin.webp",
+        "url" : "https://www.linkedin.com/in/gowthamparuchuru"
       }
     ],
     "groups" : [
