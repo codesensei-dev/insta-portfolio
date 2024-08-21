@@ -9,6 +9,7 @@ export default function ProfileSection({user}){
           roundedCircle
           width="150"
           height="150"
+          alt='codesensei profile image'
           style={{ width: '7%', minWidth:'150px', margin: '5px 0px' }}
         />
       <h4 className="profile-name">{user.name}</h4>

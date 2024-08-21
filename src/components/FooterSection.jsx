@@ -15,7 +15,7 @@ export default function FooterSection({user}){
         </h6>
             {user.socialLinks.map((socaillink,index)=>{
                 return (
-                    <a href={socaillink.url} style={{margin:'10px'}}>
+                    <a href={socaillink.url} style={{margin:'10px'}} aria-label="Instagram Link">
                       <Image
                         className="social-icon"
                         src={socaillink.icon}
