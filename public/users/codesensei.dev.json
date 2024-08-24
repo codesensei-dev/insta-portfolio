@@ -16,6 +16,18 @@
     ],
     "groups" : [
       {
+        "id": "devops-roadmap",
+        "mainText": "Devops Zero to Hero Roadmap",
+        "thumbnail": "devops.webp",
+        "links": [
+          {
+            "text": "Devops Zero to Hero Roadmap",
+            "url": "https://github.com/milanm/DevOps-Roadmap",
+            "thumbnail": "devops.webp"
+          }
+        ]
+      },
+      {
         "id": "java-articles",
         "mainText": "Java Concepts Articles",
         "thumbnail": "java.webp",
