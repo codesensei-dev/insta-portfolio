@@ -16,6 +16,18 @@
     ],
     "groups" : [
       {
+        "id": "project-suggestions",
+        "mainText": "Projects for Beginners",
+        "thumbnail": "project.webp",
+        "links": [
+          {
+            "text": "Projects Suggestions List for Beginners",
+            "url": "https://whimsical.com/projects-for-beginners-5JDsYxA1ZN2FMXdo8DXcb8",
+            "thumbnail": "project.webp"
+          }
+        ]
+      },
+      {
         "id": "devops-roadmap",
         "mainText": "Devops Zero to Hero Roadmap",
         "thumbnail": "devops.webp",
