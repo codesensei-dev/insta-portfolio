@@ -16,6 +16,33 @@
     ],
     "groups" : [
       {
+        "id": "ats-resume",
+        "mainText": "ATS-friendly Resumes",
+        "thumbnail": "resume-03.webp",
+        "links": [
+          {
+            "text": "How to make an ATS-friendly Resume?",
+            "url": "https://topresume.com/career-advice/what-is-an-ats-resume",
+            "thumbnail": "ats.webp"
+          },
+          {
+            "text": "ATS-friendly Resume-01",
+            "url": "https://www.canva.com/p/templates/EAFM7gmJVTo-black-and-white-corporate-resume/",
+            "thumbnail": "resume-01.webp"
+          },
+          {
+            "text": "ATS-friendly Resume-02",
+            "url": "https://www.canva.com/p/templates/EAFn042c6Vk-black-and-white-corporate-resume/",
+            "thumbnail": "resume-02.webp"
+          },
+          {
+            "text": "ATS-friendly Resume-03",
+            "url": "https://www.canva.com/templates/EAFh7ryFozE-nurse-resume-in-beige-black-simple-lined-style/",
+            "thumbnail": "resume-03.webp"
+          }
+        ]
+      },
+      {
         "id": "project-suggestions",
         "mainText": "Projects for Beginners",
         "thumbnail": "project.webp",
