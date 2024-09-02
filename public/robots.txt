@@ -2,3 +2,6 @@ User-agent: Googlebot
 User-agent: AdsBot-Google
 User-agent: AdsBot-Google-Mobile-Apps
 Allow: /
+
+
+Sitemap: https://www.codesensei.in/sitemap.xml
