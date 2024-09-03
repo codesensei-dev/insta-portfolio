@@ -88,6 +88,7 @@ export default function Home() {
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "You should follow CodeSensei aka Gowtham Paruchuru if you are a college student or a experienced engineer and trying to level up your coding skills by following tips and tricks provided by Code Sensei. You should follow him especially if you are from telugu community and people of andhra pradesh and telangana."
+                }
               }
             ]
           }
