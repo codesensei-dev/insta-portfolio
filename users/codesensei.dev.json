@@ -16,6 +16,18 @@
     ],
     "groups" : [
       {
+        "id": "java-articles",
+        "mainText": "Java Resources",
+        "thumbnail": "java.webp",
+        "links": [
+          {
+            "text": "15 Java concepts every Java developer should know",
+            "url": "https://whimsical.com/java-important-topics-DLBV4oBnYjBDBoqgpLodm4",
+            "thumbnail": "java.webp"
+          }
+        ]
+      },
+      {
         "id": "ats-resume",
         "mainText": "ATS-friendly Resumes",
         "thumbnail": "resume-03.webp",
@@ -63,18 +75,6 @@
             "text": "Devops Zero to Hero Roadmap",
             "url": "https://github.com/milanm/DevOps-Roadmap",
             "thumbnail": "devops.webp"
-          }
-        ]
-      },
-      {
-        "id": "java-articles",
-        "mainText": "Java Concepts Articles",
-        "thumbnail": "java.webp",
-        "links": [
-          {
-            "text": "Stack Memory Vs Heap Memory",
-            "url": "https://www.digitalocean.com/community/tutorials/java-heap-space-vs-stack-memory",
-            "thumbnail": "stack-heap.webp"
           }
         ]
       },
