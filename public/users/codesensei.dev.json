@@ -16,6 +16,18 @@
     ],
     "groups" : [
       {
+        "id": "interview-questions",
+        "mainText": "Interview Questions",
+        "thumbnail": "question.png",
+        "links": [
+          {
+            "text": "Interview questions by company-wise",
+            "url": "https://github.com/krishnadey30/LeetCode-Questions-CompanyWise",
+            "thumbnail": "question.png"
+          }
+        ]
+      },
+      {
         "id": "java-articles",
         "mainText": "Java Resources",
         "thumbnail": "java.webp",
