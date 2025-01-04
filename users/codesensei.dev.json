@@ -16,8 +16,20 @@
     ],
     "groups" : [
       {
+        "id": "ultimate-dsa-sheet",
+        "mainText": "Ultimate DSA Sheet",
+        "thumbnail": "dsa-sheet.webp",
+        "links": [
+          {
+            "text": "The ultimate DSA Sheet",
+            "url": "https://whimsical.com/the-ultimate-dsa-sheet-TPhe4bp97NYELVxX9ooD3N",
+            "thumbnail": "dsa-sheet.webp"
+          }
+        ]
+      },
+      {
         "id": "interview-questions",
-        "mainText": "Interview Questions",
+        "mainText": "Interview Questionsz",
         "thumbnail": "question.png",
         "links": [
           {
