@@ -55,11 +55,6 @@ export default function LinkCardComponent({link}){
                     {link.text}
                   </Card.Text>
                 </Col>
-                {/* <Col lg={2}>
-                <Button width={'0px'}>
-                  <Image src={testButton} rounded width={'100%'} />
-                </Button>
-              </Col> */}
               </Row>
             </Container>
           </Card>

@@ -9,6 +9,7 @@ import { useState, useEffect } from "react";
 import User from "../models/User";
 import FooterSection from "../components/FooterSection";
 import Loading from "./Loading";
+import Button from 'react-bootstrap/Button';
 
 export default function Home() {
   const { groupid } = useParams();
@@ -148,12 +149,28 @@ function GetGroupCards(groups, navigator, user) {
 }
 
 function GetLinksGroup(title, links) {
+  const navigate = useNavigate();
+  
   return (
     <>
       <h5>{title}</h5>
       {links.map((link, index) => {
         return <LinkCardComponent key={index} link={link} />;
       })}
+      <div style={{ textAlign: 'center', margin: '20px auto', maxWidth: '600px' }}>
+        <Button 
+          variant="outline-secondary" 
+          className="mt-4 w-100"
+          onClick={() => navigate('/links')}
+          style={{ 
+            backgroundColor: 'transparent',
+            borderColor: '#B22222',
+            color: '#B22222'
+          }}
+        >
+          &larr; Back
+        </Button>
+      </div>
     </>
   );
 }
