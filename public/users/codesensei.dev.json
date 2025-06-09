@@ -12,6 +12,10 @@
       {
         "icon" : "linkedin.webp",
         "url" : "https://www.linkedin.com/in/gowthamparuchuru"
+      },
+      {
+        "icon" : "topmate.webp",
+        "url" : "https://topmate.io/codesensei"
       }
     ],
     "groups" : [
