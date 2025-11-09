@@ -64,7 +64,7 @@ export default function Home() {
                 "name": "Who is Code Sensei?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "CodeSensei, aka Gowtham Paruchuru, is a Senior Software Engineer with over 4 years of experience. He has conducted interviews with more than 100 candidates and specializes in Java, Python, and Data Structures and Algorithms."
+                  "text": "CodeSensei, aka Gowtham Paruchuru, is a Senior Software Engineer working in salesforce company with over 5+ years of experience. He has conducted interviews with more than 150+ candidates and specializes in Java, Python, and Data Structures and Algorithms."
                 }
               },
               {
@@ -72,7 +72,7 @@ export default function Home() {
                 "name": "What type of content does Code Sensei create?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "CodeSensei aka Gowtham Paruchuru creates Instagram reels focused on System Design, Java tutorials, and Interview Tips. Additionally, he is planning to launch a YouTube channel soon, offering even more in-depth content. And Code Sensei creates content in regional telugu lanuage specific to states of andhra pradesh and telugu."
+                  "text": "CodeSensei aka Gowtham Paruchuru creates Instagram reels focused on System Design, Java tutorials, and Interview Tips. Additionally, he is planning to launch a YouTube channel soon, offering even more in-depth content. And Code Sensei creates content in regional telugu lanuage specific to states of andhra pradesh and telangana."
                 }
               },
               {
@@ -80,7 +80,7 @@ export default function Home() {
                 "name": "Where can I follow Code Sensei?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Follow CodeSensei aka Gowtham Paruchuru on Instagram at @codesensei.dev, where he has a growing community of over 50,000+ followers."
+                  "text": "Follow CodeSensei aka Gowtham Paruchuru on Instagram at @codesensei.dev, where he has a growing community of over 120,000+ followers."
                 }
               },
               {
