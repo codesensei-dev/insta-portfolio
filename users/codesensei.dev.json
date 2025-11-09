@@ -229,6 +229,11 @@
             "text": "System Design Resource",
             "url": "https://www.karanpratapsingh.com/courses/system-design",
             "thumbnail": "sd.webp"
+          },
+          {
+            "text": "System Designs Github",
+            "url": "https://github.com/SweetCodey/system-design-masterclass",
+            "thumbnail": "github.webp"
           }
         ]
       }
