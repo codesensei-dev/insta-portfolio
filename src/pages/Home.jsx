@@ -6,10 +6,43 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { useNavigate, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import User from "../models/User";
 import FooterSection from "../components/FooterSection";
 import Loading from "./Loading";
 import Button from 'react-bootstrap/Button';
+
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: { staggerChildren: 0.06 }
+  }
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }
+  }
+};
+
+const linkVariants = {
+  hidden: { opacity: 0, x: -30 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.4, ease: 'easeOut' }
+  }
+};
+
+const linkContainerVariants = {
+  hidden: {},
+  visible: {
+    transition: { staggerChildren: 0.08, delayChildren: 0.1 }
+  }
+};
 
 export default function Home() {
   const { groupid } = useParams();
@@ -31,7 +64,12 @@ export default function Home() {
   }, []);
 
   return userObj ? (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, y: -10 }}
+      transition={{ duration: 0.3 }}
+    >
       <ProfileSection user={userObj} />
       <ContentSection
         DisplayComponent={() => {
@@ -96,7 +134,7 @@ export default function Home() {
           `}
         </script>
       </div>
-    </>
+    </motion.div>
   ) : (<Loading />);
 }
 
@@ -105,11 +143,16 @@ function GetGroupCards(groups, navigator, user) {
   for (var i = 0; i < groups.length; i += 2) {
     rows.push(i + 1 < groups.length ? [groups[i], groups[i + 1]] : [groups[i], null])
   }
+
   return (
-    <>
+    <motion.div
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+    >
       {rows.map((row, index) => {
         return (
-          <Row style={{ textAlign: 'center' }}>
+          <Row key={index} style={{ textAlign: 'center' }}>
             <Col lg={2} md={2} sm={2} xs={0}></Col>
             <Col
               lg={3}
@@ -118,11 +161,13 @@ function GetGroupCards(groups, navigator, user) {
               xs={5}
               style={{ textAlign: 'center', margin: '10px auto', padding: 0 }}
             >
-              <GroupCardComponent
-                key={`${index}1`}
-                group={row[0]}
-                onClick={() => navigator(row[0].id)}
-              />
+              <motion.div variants={cardVariants}>
+                <GroupCardComponent
+                  key={`${index}1`}
+                  group={row[0]}
+                  onClick={() => navigator(row[0].id)}
+                />
+              </motion.div>
             </Col>
             <Col
               lg={3}
@@ -132,11 +177,13 @@ function GetGroupCards(groups, navigator, user) {
               style={{ textAlign: 'center', margin: '10px auto', padding: 0 }}
             >
               {row[1] != null ? (
-                <GroupCardComponent
-                  key={`${index}2`}
-                  group={row[1]}
-                  onClick={() => navigator(row[1].id)}
-                />
+                <motion.div variants={cardVariants}>
+                  <GroupCardComponent
+                    key={`${index}2`}
+                    group={row[1]}
+                    onClick={() => navigator(row[1].id)}
+                  />
+                </motion.div>
               ) : null}
             </Col>
             <Col lg={2} md={2} sm={2} xs={0}></Col>
@@ -144,33 +191,45 @@ function GetGroupCards(groups, navigator, user) {
         );
       })}
       <FooterSection user={user} />
-    </>
+    </motion.div>
   );
 }
 
 function GetLinksGroup(title, links) {
   const navigate = useNavigate();
-  
+
   return (
-    <>
-      <h5>{title}</h5>
+    <motion.div
+      variants={linkContainerVariants}
+      initial="hidden"
+      animate="visible"
+    >
+      <motion.h5
+        className="section-title"
+        variants={linkVariants}
+      >
+        {title}
+      </motion.h5>
+
       {links.map((link, index) => {
-        return <LinkCardComponent key={index} link={link} />;
+        return (
+          <motion.div key={index} variants={linkVariants}>
+            <LinkCardComponent link={link} />
+          </motion.div>
+        );
       })}
-      <div style={{ textAlign: 'center', margin: '20px auto', maxWidth: '600px' }}>
-        <Button 
-          variant="outline-secondary" 
-          className="mt-4 w-100"
+
+      <motion.div
+        style={{ textAlign: 'center', margin: '20px auto', maxWidth: '600px' }}
+        variants={linkVariants}
+      >
+        <Button
+          className="back-button mt-4 w-100"
           onClick={() => navigate('/links')}
-          style={{ 
-            backgroundColor: 'transparent',
-            borderColor: '#B22222',
-            color: '#B22222'
-          }}
         >
           &larr; Back
         </Button>
-      </div>
-    </>
+      </motion.div>
+    </motion.div>
   );
 }

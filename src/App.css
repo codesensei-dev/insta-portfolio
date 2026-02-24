@@ -1,51 +1,175 @@
-.background{
-  background-image: linear-gradient(to bottom, #abffff, #8ceafd, #78d4f9, #73bcf1, #7ba2e3);
+/* ====== Gradient Layer (fixed behind everything) ====== */
+.bg-gradient {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  padding: 20px 0px;
-  height: 100vh;
-  overflow-y: scroll;
+  height: 100%;
+  background: linear-gradient(135deg, var(--bg-start) 0%, var(--bg-mid) 50%, var(--bg-end) 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 12s ease infinite;
+  z-index: 0;
 }
 
+.bg-gradient::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at 20% 50%, var(--ambient-warm) 0%, transparent 50%),
+              radial-gradient(ellipse at 80% 20%, var(--ambient-cool) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* ====== Content Layer (above particles) ====== */
+.background {
+  background: transparent;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px 0px;
+  overflow-y: auto;
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ====== Typography ====== */
 .poppins-regular {
-  font-family: 'Trebuchet MS', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: var(--text-secondary);
 }
 
 .poppins-medium {
-  font-family: 'Trebuchet MS', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-style: normal;
-}
-
-.card {
-  border-radius: 0.75rem !important;
-  border: 0.5vmin solid #454545 !important;
-  box-shadow: 0.2rem 0.2rem #454545;
-  overflow: hidden !important;
-  background-color: rgb(233, 200, 116) !important;
-}
-
-.card:hover {
-  border: 1px solid black;
-  transform: scale(1.05);
-}
-
-.card:active {
-  transform: scale(0.95);
+  color: var(--text-primary);
 }
 
 .poppins-bold {
-  font-family: 'Trebuchet MS', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-style: normal;
+  color: var(--text-primary);
+}
+
+/* ====== Glassmorphism Cards ====== */
+.card {
+  border-radius: 1rem !important;
+  border: 1px solid var(--card-border) !important;
+  background: var(--card-bg) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  box-shadow: 0 4px 24px var(--card-shadow) !important;
+  overflow: hidden !important;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
+  color: var(--text-primary);
+}
+
+.card:hover {
+  border-color: var(--hover-border) !important;
+  box-shadow: 0 8px 32px var(--hover-shadow-accent), 0 4px 24px var(--hover-shadow-base) !important;
+}
+
+.card:active {
+  transform: none;
+}
+
+.card-text {
+  color: var(--card-text) !important;
+}
+
+.card-body p {
+  color: var(--card-body-text);
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* ====== Social Icons ====== */
+.social-icon {
+  transition: transform 0.2s ease;
 }
 
 .social-icon:hover {
-  /* border: 1px solid black; */
-  transform: scale(1.05);
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 8px var(--icon-glow));
 }
 
 .social-icon:active {
   transform: scale(0.95);
+}
+
+/* ====== Custom Scrollbar ====== */
+.background::-webkit-scrollbar {
+  width: 6px;
+}
+
+.background::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.background::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 3px;
+}
+
+.background::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-hover);
+}
+
+/* ====== Links ====== */
+a {
+  text-decoration: none !important;
+}
+
+/* ====== Back Button ====== */
+.back-button {
+  background: var(--btn-bg) !important;
+  backdrop-filter: blur(12px) !important;
+  border: 1px solid var(--btn-border) !important;
+  color: var(--btn-text) !important;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  border-radius: 0.75rem !important;
+  transition: all 0.3s ease !important;
+  padding: 10px 24px !important;
+}
+
+.back-button:hover {
+  background: rgba(245, 158, 11, 0.1) !important;
+  border-color: rgba(245, 158, 11, 0.3) !important;
+  color: #f59e0b !important;
+  box-shadow: 0 4px 20px rgba(245, 158, 11, 0.1) !important;
+}
+
+/* ====== Section Title ====== */
+.section-title {
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #f59e0b, transparent);
+  border-radius: 1px;
 }

@@ -1,0 +1,90 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ====== Dark Theme (Default) ====== */
+:root {
+  --bg-start: #0a0a0f;
+  --bg-mid: #1a1a2e;
+  --bg-end: #16213e;
+  --bg-body: #0a0a0f;
+
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.85);
+  --text-muted: rgba(255, 255, 255, 0.6);
+  --text-faint: rgba(255, 255, 255, 0.4);
+
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --card-border: rgba(255, 255, 255, 0.08);
+  --card-shadow: rgba(0, 0, 0, 0.3);
+  --card-text: rgba(255, 255, 255, 0.9);
+  --card-body-text: rgba(255, 255, 255, 0.85);
+
+  --hover-border: rgba(245, 158, 11, 0.3);
+  --hover-shadow-accent: rgba(245, 158, 11, 0.1);
+  --hover-shadow-base: rgba(0, 0, 0, 0.4);
+
+  --btn-bg: rgba(255, 255, 255, 0.05);
+  --btn-border: rgba(255, 255, 255, 0.1);
+  --btn-text: rgba(255, 255, 255, 0.8);
+
+  --scrollbar-thumb: rgba(255, 255, 255, 0.15);
+  --scrollbar-hover: rgba(255, 255, 255, 0.25);
+
+  --ambient-warm: rgba(245, 158, 11, 0.04);
+  --ambient-cool: rgba(99, 102, 241, 0.06);
+
+  --avatar-bg: #1a1a2e;
+  --icon-glow: rgba(245, 158, 11, 0.4);
+}
+
+/* ====== Light Theme (Sky Blue) ====== */
+[data-theme="light"] {
+  --bg-start: #e0f2fe;
+  --bg-mid: #bae6fd;
+  --bg-end: #7dd3fc;
+  --bg-body: #e0f2fe;
+
+  --text-primary: #0c4a6e;
+  --text-secondary: #155e85;
+  --text-muted: #3a7ca5;
+  --text-faint: #6ba3c2;
+
+  --card-bg: rgba(255, 255, 255, 0.55);
+  --card-border: rgba(14, 116, 178, 0.12);
+  --card-shadow: rgba(7, 89, 133, 0.08);
+  --card-text: #0c4a6e;
+  --card-body-text: #155e85;
+
+  --hover-border: rgba(245, 158, 11, 0.45);
+  --hover-shadow-accent: rgba(245, 158, 11, 0.2);
+  --hover-shadow-base: rgba(7, 89, 133, 0.1);
+
+  --btn-bg: rgba(255, 255, 255, 0.4);
+  --btn-border: rgba(14, 116, 178, 0.15);
+  --btn-text: #0c4a6e;
+
+  --scrollbar-thumb: rgba(14, 116, 178, 0.2);
+  --scrollbar-hover: rgba(14, 116, 178, 0.35);
+
+  --ambient-warm: rgba(245, 158, 11, 0.05);
+  --ambient-cool: rgba(56, 189, 248, 0.08);
+
+  --avatar-bg: #bae6fd;
+  --icon-glow: rgba(245, 158, 11, 0.5);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-body);
+  color: var(--text-primary);
+  transition: background-color 0.5s ease, color 0.4s ease;
+}

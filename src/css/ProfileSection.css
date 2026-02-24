@@ -1,28 +1,51 @@
 .profile-section {
-    text-align: center;
-    margin: 10px;
-  }
-  
-  .profile-image {
-    width: 7%;
-    min-width: 150px;
-    margin: 5px 0px;
-  }
-  
-  .profile-name {
-    margin: 5px 0px 5px;
-    font-family: 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-  }
-  
-  .profile-userId {
-    margin: 0px 0px 35px;
-    font-family: 'Trebuchet MS', sans-serif;
-    font-weight: medium;
-  }
-  
-  .profile-description {
-    margin: 3px 0px 10px;
-    font-family: 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-  }
+  text-align: center;
+  margin: 10px;
+}
+
+.profile-image {
+  width: 7%;
+  min-width: 150px;
+  margin: 5px 0px;
+}
+
+.profile-name {
+  margin: 8px 0px 4px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: var(--text-primary);
+  font-size: 1.4rem;
+  transition: color 0.4s ease;
+}
+
+.profile-userId {
+  margin: 0px 0px 6px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: rgba(245, 158, 11, 0.9);
+  font-size: 1rem;
+}
+
+.profile-description {
+  margin: 3px 0px 10px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  transition: color 0.4s ease;
+}
+
+.profile-avatar-ring {
+  padding: 3px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f59e0b, #ef4444, #8b5cf6, #f59e0b);
+  background-size: 300% 300%;
+  animation: ringGlow 4s ease infinite;
+  display: inline-block;
+}
+
+@keyframes ringGlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
